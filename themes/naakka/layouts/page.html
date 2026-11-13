@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <nav class="main">
+    <ul class="icons">
+      <li>
+        <a href="/">{{ partial "svg/arrow-left.svg" }} Home</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+      <header>
+          <h1>{{ .Title }}</h1>
+          {{- if .Params.subtitle }}
+              <p class="subtitle">{{ .Params.subtitle }}</p>
+          {{- end }}
+          <hr />
+      </header>
+
+      <div class="gmi">
+          {{ .Content }}
+      </div>
+      
+      {{- if .Date }}
+        <p class="updated">
+          Last updated at {{ .Date | time.Format ":date_long" }}
+        </p>
+      {{- end }}
+  </article>
+{{ end }}

@@ -1,0 +1,20 @@
+baseURL = 'https://www.naakka.net/'
+locale = 'en-us'
+title = 'Jaakko Naakka'
+theme = 'naakka'
+
+[menus]
+  [[menus.footer]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.footer]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+
+  [[menus.footer]]
+    name = 'Privacy Policy'
+    pageRef = '/privacy'
+    weight = 30

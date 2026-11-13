@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="container">
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        <hr />
+        {{ partial "menu.html" (dict "menuID" "footer" "page" .) }}
+
+        <span class="copyright">
+            &copy; {{ now.Year }} {{ site.Title }}
+        </span>
+    </footer>
+  </div>
+</body>
+</html>

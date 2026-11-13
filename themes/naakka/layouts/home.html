@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+    <header>
+      <h1>{{ site.Title }}</h1>
+        <p class="subtitle">{{ .Title }}</p>
+      <hr />
+    </header>
+
+    <div class="gmi">
+      {{ .Content }}
+    </div>
+    
+    <div class="centered">
+      <h2>Contacts and Links</h2>
+    </div>
+    <div class="centered">
+      <ul class="contact icons">
+        <li><a href="mailto:jaakko@naakka.net">{{ partial "svg/envelope.svg" }} jaakko@naakka.net</a></li>
+        <li><a href="https://squareyear.naakka.net/">{{ partial "svg/photo.svg" }} A Square Year</a> - my photo blog</li>
+        <li><a href="https://instagram.com/naakka">{{ partial "svg/instagram.svg" }} naakka</a> (mostly bike stuff)</li>
+        <li><a href="https://github.com/naakka">{{ partial "svg/github.svg" }} naakka</a></li>
+    </ul>
+    </div>
+</article>
+{{ end }}
