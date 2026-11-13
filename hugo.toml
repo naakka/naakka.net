@@ -3,6 +3,8 @@ locale = 'en-us'
 title = 'Jaakko Naakka'
 theme = 'naakka'
 
+disableKinds = ["taxonomy", "term"]
+
 [menus]
   [[menus.footer]]
     name = 'Home'
