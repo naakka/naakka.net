@@ -2,7 +2,7 @@
 
 backend:
   name: github
-  repo: user/repo
+  repo: naakka/naakka.net
 
 media_folder: /public/media
 public_folder: /media
